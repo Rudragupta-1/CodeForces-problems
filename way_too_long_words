@@ -1,0 +1,17 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+    int t=sc.nextInt();
+    while(t-->0){
+      String s=sc.next();
+      int l=s.length();
+      if(l>10){
+        int n=l-2;
+        System.out.println(s.charAt(0)+Integer.toString(n)+s.charAt(l-1));
+      }
+      else System.out.println(s);
+    }
+	}
+}
